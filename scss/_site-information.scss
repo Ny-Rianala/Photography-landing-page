@@ -1,0 +1,23 @@
+.main-heading {
+  padding-top: 82px;
+}
+
+img {
+  max-width: 100%;
+  margin-left: 14px;
+  border-radius: 2%;
+}
+
+.small-images {
+  max-width: calc(100% / 3);
+  display: flex;
+  flex-direction: row;
+}
+
+.stairs {
+  opacity: $images-opacity;
+}
+
+.ripples {
+  opacity: $images-opacity;
+}
