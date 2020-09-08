@@ -34,6 +34,7 @@
 }
 
 .input-form {
+  max-width: 346px;
   font-size: 16px;
   padding-left: 16px;
   padding-top: 13px;
@@ -48,12 +49,14 @@
 }
 
 .submit-button {
-  padding-top: 13px;
-  padding-left: 46px;
-  padding-bottom: 11px;
-  padding-right: 46px;
+  font-size: 16px;
+  font-weight: 700;
   border: none;
   border-radius: 3%;
   color: white;
   background-color: $site-header-color;
+  padding-top: 13px;
+  padding-left: 46px;
+  padding-bottom: 11px;
+  padding-right: 46px;
 }
