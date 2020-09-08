@@ -24,7 +24,9 @@ img {
   margin-right: 15px; }
 
 .heading {
-  background-color: #434CCC; }
+  background-color: #434CCC;
+  padding-top: 16px;
+  padding-bottom: 16px; }
 
 .intro-heading {
   color: #FFFFFF;
@@ -43,6 +45,30 @@ img {
 
 .link-back {
   padding-top: 31px; }
+
+@media (min-width: 1120px) {
+  .masthead .paragraph {
+    margin-left: 135px; }
+  .intro-heading {
+    margin-left: 135px;
+    font-size: 40px; }
+  .sub-heading {
+    font-size: 72px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .site-menu {
+    display: flex;
+    flex-direction: row; }
+  .menu {
+    padding-left: 619px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-left: 245px; }
+  .menu a {
+    color: #FFFFFF;
+    margin-left: 15px; } }
 
 body > [type="checkbox"]:checked ~ main {
   z-index: 1; }
