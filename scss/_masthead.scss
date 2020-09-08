@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .masthead .paragraph {
   margin-left: 14px;
   margin-right: 15px; 
@@ -10,6 +9,8 @@
 
 .heading {
   background-color: $site-header-color;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .intro-heading {
@@ -33,4 +34,32 @@
 .link-back {
   padding-top: 31px;
 
+}
+
+
+
+@media(min-width: 1120px) {
+  .masthead .paragraph {
+    margin-left: 135px;
+  }.intro-heading {
+    margin-left: 135px;
+    font-size: 40px;
+  }.sub-heading {
+    font-size: 72px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }.site-menu {
+    display: flex;
+    flex-direction: row;
+  } .menu {
+    padding-left: 619px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-left: 245px;
+  }.menu a {
+    color: $intro-heading-color;
+    margin-left: 15px;
+  }
 }
