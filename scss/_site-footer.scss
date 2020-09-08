@@ -34,3 +34,29 @@
 } a {
   column-gap: 8px;
 }
+
+.more-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-left: 14px;
+  padding-bottom: 75px;
+} 
+    
+.first-news-row {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: $color-brand-grey;
+}
+
+.news {
+  margin-right: 15px;
+  padding-left: 15px;
+}
+
+.end-page {
+  color: $color-brand-grey;
+  margin-left: 14px;
+  font-size: 16px;
+}
