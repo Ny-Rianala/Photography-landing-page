@@ -1,0 +1,36 @@
+.site-footer {
+  margin-left: 14px;
+}
+
+.site-heading-in-footer {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 75px;
+  padding-bottom: 23px;
+}
+
+.site-paragraph-footer {
+  font-size: 16px;
+  color: $color-brand-grey;
+}
+
+.about-the-site {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+
+.home a {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 23px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.link-site {
+  padding-left: 0;
+  color: $color-brand-grey; 
+} a {
+  column-gap: 8px;
+}
