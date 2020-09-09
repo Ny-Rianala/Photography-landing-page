@@ -36,43 +36,6 @@ img {
   opacity: $images-opacity;
 }
 
-.table {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-left: -24px;
-  padding-bottom: 75px;
-} 
-    
-.first-row {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: $color-brand-grey;
-}
-
-.features {
-  margin-left: 14px;
-  margin-left: 15px;
-}
-
-.features-heading {
-  font-size: 30px;
-  padding-bottom: 31px;
-}
-
-.features-first-paragraph {
-  padding-bottom: 40px;
-}
-
-.features-second-paragraph {
-  font-size: 16px;
-  color: $color-brand-grey;
-}
-
-.second-row {
-  font-size: 16px;
-}
-
 @media(min-width: 1120px){
   .main-heading {
     margin-left: 135px;
@@ -80,7 +43,6 @@ img {
   }.small-images {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    padding-bottom: 92px;
     column-gap: 9px;
     margin-right: 45px;
   }.first-small-image {
