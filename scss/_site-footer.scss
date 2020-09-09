@@ -1,4 +1,4 @@
-.site-footer {
+.share-link {
   margin-left: 14px;
 }
 
@@ -59,4 +59,24 @@
   color: $color-brand-grey;
   margin-left: 14px;
   font-size: 16px;
+}
+
+
+@media(min-width: 1114px) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    border-block-end: 1px solid slategrey;
+  }.share-link {
+    margin-left: 135px;
+  }.about-the-site {
+    margin-right: 338px;
+    margin-left: 130px;
+    padding-top: 79px;
+  }.more-news {
+    margin-right: 135px;
+    padding-top: 78px;
+  }.link-site li {
+    margin-bottom: 2rem;
+  }
 }
