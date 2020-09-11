@@ -72,9 +72,9 @@
 }
 
 
-@media(min-width:1114px) {
+@media(min-width:1140px) {
   .second-site-form-heading {
-    font-size: 50px;
+    font-size: 52px;
     padding-top: 0;
     margin-top: 0;
   }
@@ -85,6 +85,7 @@
     margin-left: 100px;
   } .form-input-email {
     padding-top: 135px;
+    padding-left: 150px;
   } .form-input {
     flex-direction: row;
     row-gap: 10px;
