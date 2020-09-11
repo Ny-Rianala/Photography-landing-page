@@ -1,36 +1,3 @@
-// $fonts : (
-//     (
-//         font-family: dm_serif_display,
-//         font-weight: 400,
-//         font-style: normal,
-//         filename: dm_serif_display,
-//     ),
-//     (
-//         font-family: dm_sans,
-//         font-weight: 400,
-//         font-style: normal,
-//         filename: dm_sans,
-//     ),
-//     (
-//         font-family: dm_sans,
-//         font-weight: 700,
-//         font-style: normal,
-//         filename: dm_sans,
-//     ),
-// );
-
-
-// @each $font in $fonts {
-//   @font-face {
-//       font-family: map-get($font, 'font-family');
-//       src: url(../webroot/fonts/dm_sans_400.woff2),
-//            url(../webroot/fonts/dm_sans_400.woff);
-//       font-weight: map-get($font, 'font-weght'),
-//   }
-// }
-
-
-
 @mixin headings($from: 1, $to: 6) {
   @for $i from $from to $to {
       h#{$i} {
@@ -52,7 +19,7 @@
 @mixin paragraphs-and-list {
     font-family: 'dm_sans';
     src: url(../webroot/fonts/dm_sans_400.woff2),
-        url(../webroot/fonts/dm_sans_400.woff);
+         url(../webroot/fonts/dm_sans_400.woff);
     font-style: normal;
     font-weight: 400;
 }
@@ -61,7 +28,7 @@
 @mixin bold-list {
   font-family: 'dm_sans';
   src: url(../webroot/fonts/dm_sans_700.woff2),
-      url(../webroot/fonts/dm_sans_700.woff);
+       url(../webroot/fonts/dm_sans_700.woff);
   font-style: normal;
   font-weight: 700;
 }
