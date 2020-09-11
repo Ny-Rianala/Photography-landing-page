@@ -1,3 +1,7 @@
+.information {
+  background-color: $site-background-color;
+}
+
 .table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -26,12 +30,14 @@
 .features-first-paragraph {
   @include paragraphs-and-list;
   padding-bottom: 40px;
+  line-height: 32px;
 }
 
 .features-second-paragraph {
   @include paragraphs-and-list;
   font-size: 16px;
   color: $color-brand-grey;
+  line-height: 24px;
 }
 
 .second-row {
@@ -47,12 +53,14 @@
   }.more-information {
     margin-left: -48px;
   }.features {
-    margin-left: 130px;
+    margin-left: 278px;
     margin-right: 14px;
   }.features-heading {
     font-size: 52px;
+    margin-top: 0;
   }.features-first-paragraph {
       font-size: 18px;
+      margin-top: 0;
   }.table {
     margin-left: 135px;
   }.row {
