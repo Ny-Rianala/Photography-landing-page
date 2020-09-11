@@ -39,7 +39,7 @@ body {
   font-family: 'DM_Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   margin: 0;
-  overflow-x: hidden; }
+  padding: 0; }
 
 span {
   visibility: hidden; }
@@ -58,7 +58,10 @@ body > [type="checkbox"] {
   display: none; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  background-color: rgba(67, 76, 204, 0.05);
+  margin: 0;
+  margin-bottom: 0; }
 
 .site-menu {
   display: flex; }
@@ -86,17 +89,18 @@ body > [type="checkbox"] {
   padding-bottom: 16px;
   padding-top: 16px; }
 
-.first-heading-paragraph {
+.first-paragraph-heading {
   font-family: 'dm_sans';
   src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
   font-style: normal;
   font-weight: 400; }
 
-.second-heading-paragraph {
+.second-paragraph-heading {
   font-family: 'dm_sans';
   src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 0rem; }
 
 .sub-heading {
   font-size: 45px;
@@ -108,7 +112,8 @@ body > [type="checkbox"] {
   src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
   font-style: normal;
   font-weight: 400;
-  padding-top: 31px; }
+  padding-top: 31px;
+  margin-top: 0; }
 
 @media (min-width: 1120px) {
   .masthead .paragraph {
@@ -168,6 +173,9 @@ body > nav .link {
 
 body > nav > ul a:hover {
   opacity: 1; }
+
+.site-information {
+  background-color: rgba(67, 76, 204, 0.05); }
 
 .main-heading {
   padding-top: 82px;
@@ -257,7 +265,8 @@ img {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 16px;
-  letter-spacing: 0.3em; }
+  letter-spacing: 0.3em;
+  margin-top: 0; }
 
 .second-site-form-heading {
   padding-top: 19px;
@@ -418,6 +427,9 @@ li {
   .second-end-page {
     margin-left: 450px; } }
 
+.information {
+  background-color: rgba(67, 76, 204, 0.05); }
+
 .table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -447,7 +459,8 @@ li {
   src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  line-height: 32px; }
 
 .features-second-paragraph {
   font-family: 'dm_sans';
@@ -455,7 +468,8 @@ li {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 24px; }
 
 .second-row {
   font-family: 'dm_sans';
@@ -472,12 +486,14 @@ li {
   .more-information {
     margin-left: -48px; }
   .features {
-    margin-left: 130px;
+    margin-left: 278px;
     margin-right: 14px; }
   .features-heading {
-    font-size: 52px; }
+    font-size: 52px;
+    margin-top: 0; }
   .features-first-paragraph {
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: 0; }
   .table {
     margin-left: 135px; }
   .row {
@@ -489,8 +505,8 @@ li {
   background-image: url(../images/menu.png);
   background-repeat: no-repeat;
   position: absolute;
-  top: 7%;
-  left: 80%; }
+  top: 6%;
+  left: 90%; }
 
 body > nav > ul a {
   text-transform: uppercase;
@@ -501,13 +517,12 @@ body > nav > ul a {
   padding: 1rem 1rem 1rem 4rem; }
 
 body > nav {
-  padding: 1rem;
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 20px;
   width: 250px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateX(-110%); }
