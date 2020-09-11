@@ -1,5 +1,8 @@
 .container {
   width: 100%;
+  background-color: $site-background-color;
+  margin: 0;
+  margin-bottom: 0;
 }
 
 .site-menu {
@@ -29,12 +32,13 @@
     padding-top: 16px;
 }  
 
-.first-heading-paragraph {
+.first-paragraph-heading {
   @include paragraphs-and-list;
 }
 
-.second-heading-paragraph {
+.second-paragraph-heading {
   @include paragraphs-and-list;
+  margin-bottom: 0rem;
 }
 
 
@@ -47,6 +51,7 @@
 .link-back {
   @include paragraphs-and-list;
   padding-top: 31px;
+  margin-top: 0;
 }
 
 
