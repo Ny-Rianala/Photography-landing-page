@@ -22,7 +22,6 @@
 }
 
 .home a {
-  @include bold-list;
   font-size: 16px;
   padding-bottom: 23px;
   color: #000000;
@@ -34,6 +33,10 @@
   color: $color-brand-grey; 
 } li {
   margin-bottom: 8px;
+}
+
+.link-site:hover {
+  color: #000000;
 }
 
 .more-news {
@@ -56,12 +59,28 @@
   padding-left: 15px;
 }
 
-.end-page {
-  color: $color-brand-grey;
+
+.end-page li {
+  list-style: none;
   margin-left: 14px;
+}
+
+.end-page a{
+  color: $color-brand-grey;
   font-size: 16px;
 }
 
+.end-page a:hover {
+  color: #000000;
+}
+
+.first-news-row {
+  cursor: pointer;
+}
+
+.first-news-row:hover {
+  color: #000000;
+}
 
 @media(min-width: 1140px) {
   .site-footer {

@@ -28,7 +28,8 @@
                   d="M0.0389471 4.19464C0.0136567 4.13343 0 4.06766 0 3.99987C0 3.93259 0.0136567 3.86682 0.0389471 3.80561C0.0647433 3.74389 0.101668 3.68824 0.148202 3.6422L3.64181 0.147975C3.83958 -0.0493249 4.15925 -0.0493249 4.35703 0.147975C4.5548 0.345781 4.5548 0.666013 4.35703 0.863313L1.72683 3.49398H12.9942C13.2739 3.49398 13.5 3.72062 13.5 3.99987C13.5 4.27963 13.2739 4.50577 12.9942 4.50577H1.72683L4.35703 7.13643C4.5548 7.33424 4.5548 7.65447 4.35703 7.85177C4.25839 7.95093 4.12891 8 3.99942 8C3.86993 8 3.74045 7.95093 3.64181 7.85177L0.148202 4.35805C0.101668 4.31151 0.0647433 4.25636 0.0389471 4.19464"
                   fill="black" />
               </svg>
-            </a>Back to the portfolio
+              Back to the portfolio
+            </a>
           </p>
           <h2 class="sub-heading">Beauty is seen through a lens</h2>
           <p class="first-paragraph-heading">Perspective matters.</p>
@@ -40,17 +41,82 @@
   <main>
     <article class="site-information">
       <div class="main-heading">
-        <img class="main-image" src="../webroot/images/rock_carvings_lg.jpg" alt="big image">
-        <picture class="small-images">
-          <img class="first-small-image" src="../webroot/images/rock_carvings_sm.jpg" alt="rock image">
-          <img class="first-small-image blury" src="../webroot/images/stairs_sm.jpg" alt="stairs image">
-          <img class="first-small-image blury" src="../webroot/images/ripples_sm.jpg" alt="ripple image">
-          <img class="blury" src="../webroot/images/passage_sm.jpg" alt="passage">
-          <img class="blury" src="../webroot/images/dunes_sm.jpg" alt="dunes">
-          <img class="blury" src="../webroot/images/car_sm.jpg" alt="car">
-          <img class="blury" src="../webroot/images/sunset_sm.jpg" alt="sunset">
-          <img class="blury" src="../webroot/images/canyon_sm.jpg" alt="canyon">
-        </picture> 
+        <picture id="big-image">
+          <source media="(min-width: 585px)" type="image/webp" srcset="./images/rock_carvings_lg.webp">
+          <source media="(min-width: 585px)" type="image/jpg" srcset="./images/rock_carvings_lg.jpg">
+          <source media="(min-width: 345px)" type="image/webp" srcset="./images/rock_carvings_md.webp">
+          <source media="(min-width: 345px)" type="image/jpg" srcset="./images/rock_carvings_md.jpg"> 
+          <img src="./images/rock_carvings_sm.jpg" alt>
+          <source type="image/webp" srcset="./images/rock_carvings_sm.webp"> 
+          <source type="image/jpg" srcset="./images/rock_carvings_sm.jpg"> 
+        </picture>
+        <ul class="images">
+          <li>
+            <a class="thumbnails" href="./images/rock_carvings_lg.webp">
+              <picture>
+                <source type="image/webp" srcset="./images/rock_carvings_sm.webp">
+                <img src="./images/rock_carvings_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a  class="thumbnails"  href="./images/stairs_lg.jpg">
+              <picture>
+                <source type="image/webp" srcset="./images/stairs_sm.webp">
+                <img src="./images/stairs_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a  class="thumbnails"  href="#">
+              </picture>
+                <source type="image/webp" srcset="./images/ripples_sm.webp">
+                <img src="./images/ripples_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a  class="thumbnails" href="./images/dunes_sm.jpg">
+              <picture>
+                <source type="image/webp" srcset="./images/dunes_sm.webp">
+                <img src="./images/dunes_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a  class="thumbnails"  href="./images/arches_sm.jpg">
+              </picture>
+                <source type="image/webp" srcset="./images/arches_sm.webp">
+                <img src="./images/arches_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a  class="thumbnails"  href="./images/car_sm.jpg">
+              </picture>
+                <source type="image/webp" srcset="./images/car_sm.webp">
+                <img src="./images/car_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a  class="thumbnails"  href="./images/sunset_sm.jpg">
+              </picture>
+                <source type="image/webp" srcset="./images/sunset_sm.webp">
+                <img src="./images/sunset_sm.jpg" alt="">
+              </picture>
+           </a>
+        </li>
+          <li>
+            <a  class="thumbnails"  href="#">
+              </picture>
+                <source type="image/webp" srcset="./images/canyon_sm.webp">
+                <img src="./images/canyon_sm.jpg" alt="">
+              </picture>
+            </a>
+          </li>
+          
+        </ul>
       </div>
     </article>
     <article class="information">
@@ -207,21 +273,39 @@
       <div class="more-news">
         <img src="../webroot/images/woman_xs.jpg" alt="">
         <ul class="news">
-          <li class="first-news-row">Rust, pumpkin, tans, and spices.</li>
-          <li class="second-news-row">July 15, 2019</li>
+          <li class="first-news-row"><a href="#"></a> Rust, pumpkin, tans, and spices.</li>
+          <li class="second-news-row"><a href="#"></a> July 15, 2019</li>
         </ul>
         <img src="../webroot/images/passage_xs.jpg" alt="">
         <ul class="news">
-          <li class="first-news-row">Experiencing Japan</li>
-          <li class="second-news-row">July 10, 2019</li>
+          <li class="first-news-row"><a href="#"></a> Experiencing Japan</li>
+          <li class="second-news-row"><a href="#"></a> July 10, 2019</li>
         </ul>
       </div>
     </div>
     <div class="end-page">
-      <p class="first-end-page">Created by Laaqiq, modified by Onja</p>
-      <p class="second-end-page">© PHOTOGRAF, 2020. All rights reserved.</p>
+      <li class="first-end-page">
+        <a  href="#"><p>Created by Laaqiq, modified by Onja</p></a>
+      </li>
+      <li class="second-end-page">
+        <a  href="#"><p>© PHOTOGRAF, 2020. All rights reserved.</p></a>
+      </li>
     </div>
   </footer>
 </body>
+    <script>
+      const bigImage = document.querySelector('#big-image');
+      const listOfImage = (e) => {
+        const smallImages = e.target.closest(".thumbnails");
+          if(smallImages) {
+            bigImage.querySelector("img").src = smallImages.href;
+            e.preventDefault();
+            console.log(smallImages.href);
+        }
+      }
+     
+      document.addEventListener("click", listOfImage);
 
+  
+    </script>  
 </html>

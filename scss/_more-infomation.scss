@@ -11,7 +11,7 @@
 } 
     
 .first-row {
-  @include paragraphs-and-list;
+  // @include paragraphs-and-list;
   font-size: 16px;
   margin-bottom: 8px;
   color: $color-brand-grey;
@@ -28,20 +28,20 @@
 }
 
 .features-first-paragraph {
-  @include paragraphs-and-list;
+  // @include paragraphs-and-list;
   padding-bottom: 40px;
   line-height: 32px;
 }
 
 .features-second-paragraph {
-  @include paragraphs-and-list;
+  // @include paragraphs-and-list;
   font-size: 16px;
   color: $color-brand-grey;
   line-height: 24px;
 }
 
 .second-row {
-  @include bold-list;
+  // @include bold-list;
   font-size: 16px;
 }
 

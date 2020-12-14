@@ -1,32 +1,22 @@
-h1 {
-  font-family: 'dm_serif_display';
-  src: url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff);
-  font-style: normal;
-  font-weight: 700; }
+@font-face {
+  font-family: "dm_sans";
+  src: local("dm_sans-Regular"), local("dm_sans Regular"), local("dm_sans-Bold"), local("dm_sans Bold"), url("../fonts/dm_sans_400.woff2"), url("../fonts/dm_sans_400.woff"), url("../fonts/dm_sans_700.woff2"), url("../fonts/dm_sans_700.woff"); }
 
-h2 {
-  font-family: 'dm_serif_display';
-  src: url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff);
-  font-style: normal;
-  font-weight: 700; }
+@font-face {
+  font-family: "dm_serif_display";
+  src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
-h3 {
-  font-family: 'dm_serif_display';
-  src: url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff);
-  font-style: normal;
-  font-weight: 700; }
+@font-face {
+  font-family: "dm_serif_display";
+  src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
-h4 {
-  font-family: 'dm_serif_display';
-  src: url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff);
-  font-style: normal;
-  font-weight: 700; }
+@font-face {
+  font-family: "dm_serif_display";
+  src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
-h5 {
-  font-family: 'dm_serif_display';
-  src: url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff);
-  font-style: normal;
-  font-weight: 700; }
+@font-face {
+  font-family: "dm_serif_display";
+  src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
 .a11y {
   height: 1px;
@@ -36,7 +26,7 @@ h5 {
   white-space: nowrap; }
 
 body {
-  font-family: 'DM_Sans', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'dm_sans';
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -52,8 +42,21 @@ ul a {
   list-style: none;
   text-decoration: none; }
 
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-left: 1rem; }
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0; }
 
 body > [type="checkbox"] {
   display: none; }
@@ -77,10 +80,6 @@ body > [type="checkbox"] {
   padding-bottom: 16px; }
 
 .intro-heading {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 24px;
@@ -90,29 +89,12 @@ body > [type="checkbox"] {
   padding-bottom: 16px;
   padding-top: 16px; }
 
-.first-paragraph-heading {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400; }
-
-.second-paragraph-heading {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 0rem; }
-
 .sub-heading {
   font-size: 45px;
   padding-top: 61px;
   padding-bottom: 65px; }
 
 .link-back {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400;
   padding-top: 31px;
   margin-top: 0; }
 
@@ -189,11 +171,12 @@ img {
   padding: 0;
   border-radius: 2%; }
 
-.small-images {
+.images {
   display: flex;
   flex-direction: row;
-  padding-top: 8px;
-  row-gap: 9px; }
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0; }
 
 .first-small-image {
   max-width: calc(100% / 3);
@@ -279,10 +262,6 @@ img {
   flex-direction: column; }
 
 .input {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff);
-  font-style: normal;
-  font-weight: 700;
   padding-top: 12px; }
 
 .input-form {
@@ -366,10 +345,6 @@ img {
   margin-left: 14px; }
 
 .home a {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff);
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   padding-bottom: 23px;
   color: #000000;
@@ -381,6 +356,9 @@ img {
 
 li {
   margin-bottom: 8px; }
+
+.link-site:hover {
+  color: #000000; }
 
 .more-news {
   display: grid;
@@ -399,10 +377,22 @@ li {
   margin-right: 15px;
   padding-left: 15px; }
 
-.end-page {
+.end-page li {
+  list-style: none;
+  margin-left: 14px; }
+
+.end-page a {
   color: rgba(0, 0, 0, 0.5);
-  margin-left: 14px;
   font-size: 16px; }
+
+.end-page a:hover {
+  color: #000000; }
+
+.first-news-row {
+  cursor: pointer; }
+
+.first-news-row:hover {
+  color: #000000; }
 
 @media (min-width: 1140px) {
   .site-footer {
@@ -439,10 +429,6 @@ li {
   padding-bottom: 75px; }
 
 .first-row {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   margin-bottom: 8px;
   color: rgba(0, 0, 0, 0.5); }
@@ -456,27 +442,15 @@ li {
   padding-bottom: 31px; }
 
 .features-first-paragraph {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400;
   padding-bottom: 40px;
   line-height: 32px; }
 
 .features-second-paragraph {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_400.woff2), url(../webroot/fonts/dm_sans_400.woff);
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
   line-height: 24px; }
 
 .second-row {
-  font-family: 'dm_sans';
-  src: url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff);
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px; }
 
 @media (min-width: 1114px) {

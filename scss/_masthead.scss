@@ -21,7 +21,7 @@
 }
 
 .intro-heading {
-    @include paragraphs-and-list;
+    // @include paragraphs-and-list;
     color: $intro-heading-color;
     text-transform: uppercase;
     font-size: 24px;
@@ -32,14 +32,14 @@
     padding-top: 16px;
 }  
 
-.first-paragraph-heading {
-  @include paragraphs-and-list;
-}
+// .first-paragraph-heading {
+//   // @include paragraphs-and-list;
+// }
 
-.second-paragraph-heading {
-  @include paragraphs-and-list;
-  margin-bottom: 0rem;
-}
+// .second-paragraph-heading {
+//   // @include paragraphs-and-list;
+//   margin-bottom: 0rem;
+// }
 
 
 .sub-heading {
@@ -49,7 +49,7 @@
 }
 
 .link-back {
-  @include paragraphs-and-list;
+  // @include paragraphs-and-list;
   padding-top: 31px;
   margin-top: 0;
 }
