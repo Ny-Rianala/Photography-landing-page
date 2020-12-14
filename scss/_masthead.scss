@@ -48,12 +48,16 @@
   padding-bottom: 65px;
 }
 
-.link-back {
-  // @include paragraphs-and-list;
+.link-back a{
   padding-top: 31px;
   margin-top: 0;
+  color: $color-brand-grey;
 }
 
+.link-back {
+  margin-top: 0;
+  padding-top: 31px;
+}
 
 @media(min-width: 1120px) {
    .masthead .paragraph {

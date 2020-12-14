@@ -94,9 +94,14 @@ body > [type="checkbox"] {
   padding-top: 61px;
   padding-bottom: 65px; }
 
-.link-back {
+.link-back a {
   padding-top: 31px;
-  margin-top: 0; }
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.5); }
+
+.link-back {
+  margin-top: 0;
+  padding-top: 31px; }
 
 @media (min-width: 1120px) {
   .masthead .paragraph {
@@ -377,9 +382,14 @@ li {
   margin-right: 15px;
   padding-left: 15px; }
 
-.end-page li {
-  list-style: none;
+.end-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: 14px; }
+
+.end-page li {
+  list-style: none; }
 
 .end-page a {
   color: rgba(0, 0, 0, 0.5);
@@ -412,11 +422,12 @@ li {
   .end-page {
     display: flex;
     flex-direction: row;
-    padding-bottom: 75px; }
+    padding-bottom: 75px;
+    justify-content: space-between; }
   .first-end-page {
     margin-left: 135px; }
   .second-end-page {
-    margin-left: 450px; } }
+    margin-right: 135px; } }
 
 .information {
   background-color: rgba(67, 76, 204, 0.05); }
