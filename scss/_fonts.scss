@@ -1,49 +1,14 @@
-$fonts: (
-  (
-    family: "dm_sans",
-    style: normal,
-    weight: "700",
-    filename: "dm_sans"
-  ),
-  (
-    family: "dm_serif_display",
-    style: normal,
-    weight: "400",
-    filename: "dm_serif_display"
-  ),
-  (
-    family: "dm_serif_display",
-    style: italic,
-    weight: "700",
-    filename: "dm_serif_display"
-  ),
-  (
-    family: "dm_serif_display",
-    style: italic,
-    weight: "700",
-    filename: "dm_serif_display"
-  ),
-  (
-    family: "dm_serif_display",
-    style: italic,
-    weight: "700",
-    filename: "dm_serif_display"
-  ),
-);
-
-
+$fonts: ( ( family: "Dm Sans", style: normal, weight: 700, filename: "dm_sans"), ( family: "Dm Serif Display", style: normal, weight: 400, filename: "dm_serif_display"), ( family: "Dm Serif Display", style: italic, weight: 500, filename: "dm_serif_display"), ( family: "Dm Serif Display", style: italic, weight: 700, filename: "dm_serif_display"), ( family: "Dm Serif Display", style: italic, weight: 700, filename: "dm_serif_display"), );
 @each $font in $fonts {
-  @font-face {
-    font-family: map-get($font, family);
-    src: local("#{map-get($font, filename)}-Regular"),
-         local("#{map-get($font, filename)} Regular"),
-         local("#{map-get($font, filename)}-Bold"),
-         local("#{map-get($font, filename)} Bold"),
-         url("../fonts/#{map-get($font, filename)}_400.woff2"),
-         url("../fonts/#{map-get($font, filename)}_400.woff"),
-         url("../fonts/#{map-get($font, filename)}_700.woff2"),
-         url("../fonts/#{map-get($font, filename)}_700.woff");
-  }
-}  
-
-
+    @font-face {
+        font-family: map-get($font, family);
+        src: local("#{map-get($font, filename)}-Regular"),
+        local("#{map-get($font, filename)} Regular"),
+        local("#{map-get($font, filename)}-Bold"),
+        local("#{map-get($font, filename)} Bold"),
+        url("../fonts/#{map-get($font, filename)}_400.woff2"),
+        url("../fonts/#{map-get($font, filename)}_400.woff"),
+        url("../fonts/#{map-get($font, filename)}_700.woff2"),
+        url("../fonts/#{map-get($font, filename)}_700.woff");
+    }
+}

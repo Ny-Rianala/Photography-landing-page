@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "dm_sans";
+  font-family: "Dm Sans";
   src: local("dm_sans-Regular"), local("dm_sans Regular"), local("dm_sans-Bold"), local("dm_sans Bold"), url("../fonts/dm_sans_400.woff2"), url("../fonts/dm_sans_400.woff"), url("../fonts/dm_sans_700.woff2"), url("../fonts/dm_sans_700.woff"); }
 
 @font-face {
-  font-family: "dm_serif_display";
+  font-family: "Dm Serif Display";
   src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
 @font-face {
-  font-family: "dm_serif_display";
+  font-family: "Dm Serif Display";
   src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
 @font-face {
-  font-family: "dm_serif_display";
+  font-family: "Dm Serif Display";
   src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
 @font-face {
-  font-family: "dm_serif_display";
+  font-family: "Dm Serif Display";
   src: local("dm_serif_display-Regular"), local("dm_serif_display Regular"), local("dm_serif_display-Bold"), local("dm_serif_display Bold"), url("../fonts/dm_serif_display_400.woff2"), url("../fonts/dm_serif_display_400.woff"), url("../fonts/dm_serif_display_700.woff2"), url("../fonts/dm_serif_display_700.woff"); }
 
 .a11y {
@@ -26,11 +26,16 @@
   white-space: nowrap; }
 
 body {
-  font-family: 'dm_sans';
+  font-family: 'Dm Sans', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
+
+h1,
+h2 {
+  font-family: "Dm Serif Display", serif;
+  font-weight: normal; }
 
 span {
   visibility: hidden; }
@@ -77,27 +82,37 @@ body > [type="checkbox"] {
 .heading {
   background-color: #434CCC;
   padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  padding-left: 14px; }
 
 .intro-heading {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 24px;
   margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 14px;
-  padding-bottom: 16px;
-  padding-top: 16px; }
+  margin-bottom: 0; }
 
 .sub-heading {
-  font-size: 45px;
+  font-size: 52px;
   padding-top: 61px;
-  padding-bottom: 65px; }
+  padding-bottom: 65px;
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .link-back a {
   padding-top: 31px;
   margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 38px;
+  font-size: 16px;
+  line-height: 24px;
   color: rgba(0, 0, 0, 0.5); }
+
+.second-paragraph-heading {
+  line-height: 32px;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .link-back {
   margin-top: 0;
@@ -167,8 +182,9 @@ body > nav > ul a:hover {
 
 .main-heading {
   padding-top: 82px;
-  margin-left: 14px;
-  margin-left: 15px; }
+  background-color: rgba(67, 76, 204, 0.05);
+  padding-left: 14px;
+  padding-right: 14px; }
 
 img {
   max-width: 100%;
@@ -302,7 +318,8 @@ img {
   padding-top: 13px;
   padding-left: 46px;
   padding-bottom: 11px;
-  padding-right: 46px; }
+  padding-right: 46px;
+  cursor: pointer; }
 
 @media (min-width: 1140px) {
   .second-site-form-heading {
@@ -449,12 +466,14 @@ li {
   margin-left: 15px; }
 
 .features-heading {
-  font-size: 30px;
-  padding-bottom: 31px; }
+  font-size: 40px;
+  padding-bottom: 31px;
+  line-height: 48px; }
 
 .features-first-paragraph {
   padding-bottom: 40px;
-  line-height: 32px; }
+  line-height: 32px;
+  font-size: 18px; }
 
 .features-second-paragraph {
   font-size: 16px;
@@ -462,7 +481,8 @@ li {
   line-height: 24px; }
 
 .second-row {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 700; }
 
 @media (min-width: 1114px) {
   .information {

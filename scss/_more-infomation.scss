@@ -23,26 +23,26 @@
 }
 
 .features-heading {
-  font-size: 30px;
+  font-size: 40px;
   padding-bottom: 31px;
+  line-height: 48px;
 }
 
 .features-first-paragraph {
-  // @include paragraphs-and-list;
   padding-bottom: 40px;
   line-height: 32px;
+  font-size: 18px;
 }
 
 .features-second-paragraph {
-  // @include paragraphs-and-list;
   font-size: 16px;
   color: $color-brand-grey;
   line-height: 24px;
 }
 
 .second-row {
-  // @include bold-list;
   font-size: 16px;
+  font-weight: 700;
 }
 
 @media(min-width: 1114px) {
