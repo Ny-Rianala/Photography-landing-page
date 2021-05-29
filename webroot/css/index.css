@@ -177,12 +177,11 @@ body > nav .link {
 body > nav > ul a:hover {
   opacity: 1; }
 
-.site-form {
+.site-information {
   background-color: rgba(67, 76, 204, 0.05); }
 
 .main-heading {
   padding-top: 82px;
-  background-color: rgba(67, 76, 204, 0.05);
   padding-left: 14px;
   padding-right: 14px; }
 
@@ -217,6 +216,7 @@ img {
 @media (min-width: 1140px) {
   .main-heading {
     margin-left: 135px;
+    margin-right: 135px;
     border-radius: 0%; }
   .small-images {
     display: grid;
@@ -492,8 +492,8 @@ li {
   .more-information {
     margin-left: -48px; }
   .features {
-    margin-left: 278px;
-    margin-right: 14px; }
+    margin-left: 232px;
+    margin-right: 135px; }
   .features-heading {
     font-size: 52px;
     margin-top: 0; }
