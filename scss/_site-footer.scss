@@ -1,161 +1,130 @@
 .site-footer {
   margin-left: 14px;
+  &__share-link {
+    margin-left: 14px;
+  }
+  &__header {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 75px;
+    padding-bottom: 23px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $color-brand-grey;
+    line-height: 24px;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 14px;
+  }
+  &__home a {
+    font-size: 16px;
+    padding-bottom: 23px;
+    color: #000000;
+    text-decoration: none;
+  }
+  &__nav-links {
+    padding-left: 0;
+    color: $color-brand-grey;
+    li {
+      margin-bottom: 8px;
+    }
+    :hover {
+      color: #000000;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 31px;
+  }
+  &__image-card {
+    width: 30%;
+  }
+  &__information {
+    margin-left: 31px;
+  }
+  &__date {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+  }
+  &__description {
+    color: #000000;
+  }
 }
 
-.share-link {
-  margin-left: 14px;
-}
+// .first-news-row {
+//   display: block;
+//   font-size: 16px;
+//   margin-bottom: 8px;
+//   color: $color-brand-grey;
+// }
 
-.site-heading-in-footer {
-  font-size: 24px;
-  text-transform: uppercase;
-  padding-top: 75px;
-  padding-bottom: 23px;
-}
-
-.site-paragraph-footer {
-  font-size: 16px;
-  color: $color-brand-grey;
-  line-height: 24px;
-}
-
-.about-the-site {
-  display: flex;
-  flex-direction: column;
-  margin-left: 14px;
-}
-
-.home a {
-  font-size: 16px;
-  padding-bottom: 23px;
-  color: #000000;
-  text-decoration: none;
-}
-
-.link-site {
-  padding-left: 0;
-  color: $color-brand-grey;
-}
-li {
-  margin-bottom: 8px;
-}
-
-.link-site:hover {
-  color: #000000;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  list-style: none;
-  margin-bottom: 31px;
-}
-
-.news {
-  margin-left: 31px;
-}
-
-.date {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.description {
-  color: #000000;
-}
-
-.card-image {
-  width: 30%;
-}
-// .more-news {
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-gap: 1rem;
+// .end-page {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
 //   margin-left: 14px;
-//   padding-bottom: 75px;
 // }
 
-.first-news-row {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: $color-brand-grey;
-}
-
-// .news {
-//   margin-right: 15px;
-//   padding-left: 15px;
+// .end-page li {
+//   list-style: none;
 // }
 
-.end-page {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 14px;
-}
+// .end-page a {
+//   color: $color-brand-grey;
+//   font-size: 16px;
+// }
 
-.end-page li {
-  list-style: none;
-}
+// .end-page a:hover {
+//   color: #000000;
+// }
 
-.end-page a {
-  color: $color-brand-grey;
-  font-size: 16px;
-}
+// .first-news-row {
+//   cursor: pointer;
+// }
 
-.end-page a:hover {
-  color: #000000;
-}
-
-.first-news-row {
-  cursor: pointer;
-}
-
-.first-news-row:hover {
-  color: #000000;
-}
+// .first-news-row:hover {
+//   color: #000000;
+// }
 
 @media (min-width: 1140px) {
   .site-footer {
     display: flex;
     flex-direction: row;
     border-block-end: 1px solid slategrey;
-  }
-  .share-link {
-    margin-left: 135px;
-  }
-  .about-the-site {
-    margin-right: 135px;
-    padding-top: 79px;
-  }
-  .news {
-    margin-top: 23px;
-  }
-  .container-card {
-    margin-top: 73px;
-  }
-  .card-image {
-    width: 30%;
-    height: 30%;
-  }
-  // .more-news {
-  //   margin-right: 135px;
-  //   padding-top: 78px;
-  // }
-  .home {
-    margin-bottom: 24px;
-  }
-  .end-page {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 75px;
-    justify-content: space-between;
-  }
-  .first-end-page {
-    margin-left: 135px;
-  }
-  .second-end-page {
-    margin-right: 135px;
+    &__nav-links {
+      margin-left: 135px;
+    }
+    &__home {
+      margin-bottom: 24px;
+    }
+    &__container-card {
+      margin-top: 73px;
+    }
+    &__image-card {
+      width: 30%;
+      height: 30%;
+    }
+    &__information {
+      margin-top: 23px;
+    }
   }
 }
+// .end-page {
+//   display: flex;
+//   flex-direction: row;
+//   padding-bottom: 75px;
+//   justify-content: space-between;
+// }
+// .first-end-page {
+//   margin-left: 135px;
+// }
+// .second-end-page {
+//   margin-right: 135px;
+// }
