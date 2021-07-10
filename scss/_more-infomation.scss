@@ -1,78 +1,68 @@
-.information {
+.more-information {
   background-color: $site-background-color;
+  &__date-location {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-left: -24px;
+    padding-bottom: 75px;
+  }
+  &__first-row {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: $color-brand-grey;
+  }
+  &__second-row {
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 
-.table {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-left: -24px;
-  padding-bottom: 75px;
-}
-
-.first-row {
-  // @include paragraphs-and-list;
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: $color-brand-grey;
-}
-
-.features {
+.information-features {
   margin-left: 14px;
   margin-left: 15px;
-}
-
-.features-heading {
-  font-size: 40px;
-  padding-bottom: 31px;
-  line-height: 48px;
-}
-
-.features-first-paragraph {
-  padding-bottom: 40px;
-  line-height: 32px;
-  font-size: 18px;
-}
-
-.features-second-paragraph {
-  font-size: 16px;
-  color: $color-brand-grey;
-  line-height: 24px;
-}
-
-.second-row {
-  font-size: 16px;
-  font-weight: 700;
+  &__header {
+    font-size: 40px;
+    padding-bottom: 31px;
+    line-height: 48px;
+  }
+  &__first-paragraph {
+    padding-bottom: 40px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+  &__second-paragraph {
+    font-size: 16px;
+    color: $color-brand-grey;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 1114px) {
-  .information {
+  .more-information {
     display: flex;
     flex-direction: row;
     row-gap: 157px;
-  }
-  .more-information {
-    margin-left: -48px;
-  }
-  .features {
-    margin-left: 232px;
-    margin-right: 135px;
-  }
-  .features-heading {
-    font-size: 52px;
-    margin-top: 0;
-  }
-  .features-first-paragraph {
-    font-size: 18px;
-    margin-top: 0;
-  }
-  .table {
-    margin-left: 135px;
-  }
-  .row {
-    margin-left: 0;
-  }
-  .first-row {
-    margin-right: 135px;
+    &__date-location {
+      margin-left: 135px;
+    }
+    &__first-row {
+      margin-right: 135px;
+    }
+    &__row {
+      margin-left: 0;
+    }
+    .information-features {
+      margin-left: 232px;
+      margin-right: 135px;
+      &__header {
+        font-size: 52px;
+        margin-top: 0;
+        &__first-paragraph {
+          font-size: 18px;
+          margin-top: 0;
+        }
+      }
+    }
   }
 }

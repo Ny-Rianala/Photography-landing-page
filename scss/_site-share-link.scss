@@ -18,16 +18,17 @@
   padding-left: 0;
   padding-top: 45px;
   padding-bottom: 80px;
-} .share-link-icons li a {
+}
+.share-link-icons li a {
   width: 18px;
   height: 18px;
-  display: block; 
+  display: block;
   margin: 0;
   margin-right: 10px;
 }
 
-@media(min-width: 1114px) {
+@media (min-width: 1114px) {
   .share {
     margin-left: 0;
-}
+  }
 }
