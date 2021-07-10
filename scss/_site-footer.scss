@@ -1,3 +1,7 @@
+.site-footer {
+  margin-left: 14px;
+}
+
 .share-link {
   margin-left: 14px;
 }
@@ -30,8 +34,9 @@
 
 .link-site {
   padding-left: 0;
-  color: $color-brand-grey; 
-} li {
+  color: $color-brand-grey;
+}
+li {
   margin-bottom: 8px;
 }
 
@@ -39,14 +44,38 @@
   color: #000000;
 }
 
-.more-news {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-left: 14px;
-  padding-bottom: 75px;
-} 
-    
+.card {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 31px;
+}
+
+.news {
+  margin-left: 31px;
+}
+
+.date {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+.description {
+  color: #000000;
+}
+
+.card-image {
+  width: 30%;
+}
+// .more-news {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-gap: 1rem;
+//   margin-left: 14px;
+//   padding-bottom: 75px;
+// }
+
 .first-news-row {
   display: block;
   font-size: 16px;
@@ -54,10 +83,10 @@
   color: $color-brand-grey;
 }
 
-.news {
-  margin-right: 15px;
-  padding-left: 15px;
-}
+// .news {
+//   margin-right: 15px;
+//   padding-left: 15px;
+// }
 
 .end-page {
   display: flex;
@@ -70,7 +99,7 @@
   list-style: none;
 }
 
-.end-page a{
+.end-page a {
   color: $color-brand-grey;
   font-size: 16px;
 }
@@ -87,32 +116,46 @@
   color: #000000;
 }
 
-@media(min-width: 1140px) {
+@media (min-width: 1140px) {
   .site-footer {
     display: flex;
     flex-direction: row;
     border-block-end: 1px solid slategrey;
-
-  }.share-link {
+  }
+  .share-link {
     margin-left: 135px;
-
-  }.about-the-site {
+  }
+  .about-the-site {
     margin-right: 135px;
     padding-top: 79px;
-
-  }.more-news {
-    margin-right: 135px;
-    padding-top: 78px;
-  } .home {
+  }
+  .news {
+    margin-top: 23px;
+  }
+  .container-card {
+    margin-top: 73px;
+  }
+  .card-image {
+    width: 30%;
+    height: 30%;
+  }
+  // .more-news {
+  //   margin-right: 135px;
+  //   padding-top: 78px;
+  // }
+  .home {
     margin-bottom: 24px;
-  }.end-page {
+  }
+  .end-page {
     display: flex;
     flex-direction: row;
     padding-bottom: 75px;
     justify-content: space-between;
-  } .first-end-page {
+  }
+  .first-end-page {
     margin-left: 135px;
-  } .second-end-page {
+  }
+  .second-end-page {
     margin-right: 135px;
   }
 }
