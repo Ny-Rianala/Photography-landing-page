@@ -163,7 +163,7 @@ body > nav > ul a:hover {
   opacity: 1; }
 
 .site-information {
-  background-color: blue;
+  background-color: rgba(67, 76, 204, 0.05);
   padding-top: 82px;
   padding-left: 14px;
   padding-right: 14px; }
@@ -174,9 +174,6 @@ body > nav > ul a:hover {
     padding-left: 0;
     margin: 12px;
     margin: 0; }
-
-.blury {
-  opacity: 0.5; }
 
 @media (min-width: 1120px) {
   .site-information {

@@ -1,5 +1,5 @@
 .site-information {
-  background-color: blue;
+  background-color: $site-background-color;
   padding-top: 82px;
   padding-left: 14px;
   padding-right: 14px;
@@ -11,10 +11,6 @@
     margin: 12px;
     margin: 0;
   }
-}
-
-.blury {
-  opacity: $images-opacity;
 }
 
 @media (min-width: 1120px) {
