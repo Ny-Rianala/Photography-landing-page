@@ -394,45 +394,50 @@ body > nav > ul a:hover {
   .more-information__second-row {
     font-size: 16px;
     font-weight: 700; }
-
-.information-features {
-  margin-left: 14px;
-  margin-left: 15px; }
-  .information-features__header {
+  .more-information__information-features {
+    padding-left: 14px; }
+  .more-information__header {
     font-size: 40px;
     padding-bottom: 31px;
     line-height: 48px; }
-  .information-features__first-paragraph {
+  .more-information__first-paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
     padding-bottom: 40px; }
-  .information-features__second-paragraph {
+  .more-information__second-paragraph {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
     line-height: 24px; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1000px) {
   .more-information {
     display: flex;
     flex-direction: row;
     row-gap: 157px; }
     .more-information__date-location {
-      margin-left: 135px; }
+      margin-left: 90px;
+      padding-bottom: 500px;
+      padding-top: 89px; }
     .more-information__first-row {
       margin-right: 135px; }
     .more-information__row {
       margin-left: 0; }
-    .more-information .information-features {
-      margin-left: 232px;
-      margin-right: 135px; }
-      .more-information .information-features__header {
-        font-size: 52px;
-        margin-top: 0; }
-        .more-information .information-features__header__first-paragraph {
-          font-size: 18px;
-          margin-top: 0; } }
+    .more-information__information-features {
+      padding-left: 100px;
+      padding-right: 135px; }
+    .more-information__header {
+      font-size: 52px;
+      margin-top: 0;
+      padding-top: 87px; }
+    .more-information__first-paragraph {
+      font-size: 18px;
+      margin-top: 0; }
+    .more-information__second-paragraph {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 24px; } }
 
 .link_menu {
   background-image: url(../images/menu.png);
