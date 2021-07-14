@@ -186,11 +186,13 @@ body > nav > ul a:hover {
     margin-right: 9px;
     opacity: 0.5; }
 
-@media (min-width: 1120px) {
+@media (min-width: 1000px) {
   .site-information {
-    margin-left: 135px;
-    margin-right: 135px;
-    border-radius: 0%; } }
+    padding-left: 135px;
+    padding-right: 135px;
+    border-radius: 0%; }
+    .site-information__small-images {
+      padding-right: 2px; } }
 
 .icon svg {
   max-width: 100%;

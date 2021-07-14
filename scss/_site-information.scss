@@ -24,10 +24,13 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1000px) {
   .site-information {
-    margin-left: 135px;
-    margin-right: 135px;
+    padding-left: 135px;
+    padding-right: 135px;
     border-radius: 0%;
+    &__small-images {
+      padding-right: 2px;
+    }
   }
 }
