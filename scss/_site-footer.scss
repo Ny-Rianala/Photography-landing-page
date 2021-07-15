@@ -93,13 +93,14 @@
 //   color: #000000;
 // }
 
-@media (min-width: 1140px) {
+@media (min-width: 1000px) {
   .site-footer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-block-end: 1px solid slategrey;
     &__nav-links {
-      margin-left: 135px;
+      padding-left: 135px;
+      padding-top: 90px;
     }
     &__home {
       margin-bottom: 24px;
@@ -111,9 +112,9 @@
       width: 30%;
       height: 30%;
     }
-    &__information {
-      margin-top: 23px;
-    }
+    // &__information {
+    //   margin-top: 23px;
+    // }
   }
 }
 // .end-page {

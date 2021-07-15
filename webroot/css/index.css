@@ -360,22 +360,21 @@ body > nav > ul a:hover {
   .site-footer__description {
     color: #000000; }
 
-@media (min-width: 1140px) {
+@media (min-width: 1000px) {
   .site-footer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-block-end: 1px solid slategrey; }
     .site-footer__nav-links {
-      margin-left: 135px; }
+      padding-left: 135px;
+      padding-top: 90px; }
     .site-footer__home {
       margin-bottom: 24px; }
     .site-footer__container-card {
       margin-top: 73px; }
     .site-footer__image-card {
       width: 30%;
-      height: 30%; }
-    .site-footer__information {
-      margin-top: 23px; } }
+      height: 30%; } }
 
 .more-information {
   background-color: rgba(67, 76, 204, 0.05); }
