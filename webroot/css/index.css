@@ -96,6 +96,7 @@ body > [type="checkbox"] {
       color: rgba(0, 0, 0, 0.5); }
   .container__subheading {
     font-size: 52px;
+    line-height: 64px;
     padding-top: 61px;
     padding-bottom: 65px;
     margin-bottom: 0;
@@ -156,14 +157,8 @@ body > nav > ul a {
   display: block;
   padding: 1rem 1rem 1rem 4rem; }
 
-body > nav .active a {
-  opacity: 1; }
-
 body > nav .link {
   background-position: 1rem 50%; }
-
-body > nav > ul a:hover {
-  opacity: 1; }
 
 .site-information {
   background-color: rgba(67, 76, 204, 0.05);
@@ -236,7 +231,7 @@ body > nav > ul a:hover {
   margin: 0;
   margin-right: 10px; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1000px) {
   .share {
     margin-left: 0; } }
 
@@ -255,7 +250,8 @@ body > nav > ul a:hover {
   .latest-update__subheader {
     padding-top: 19px;
     padding-bottom: 44px;
-    font-size: 30px; }
+    font-size: 40px;
+    line-height: 48px; }
   .latest-update__form {
     display: flex;
     flex-direction: column; }
@@ -300,6 +296,7 @@ body > nav > ul a:hover {
     margin-left: 100px; }
   .latest-update__subheader {
     font-size: 52px;
+    line-height: 64px;
     padding-top: 0;
     margin-top: 0; }
   .latest-update__form {
@@ -351,13 +348,16 @@ body > nav > ul a:hover {
     padding-left: 0;
     color: rgba(0, 0, 0, 0.5); }
     .site-footer__nav-links li {
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      color: #000000; }
+    .site-footer__nav-links li:first-child {
+      padding-bottom: 23px; }
     .site-footer__nav-links :hover {
       color: #000000; }
     .site-footer__nav-links a {
       font-size: 16px;
       padding-bottom: 23px;
-      color: #000000;
+      color: rgba(0, 0, 0, 0.5);
       text-decoration: none; }
     .site-footer__nav-links__card {
       display: flex;
@@ -369,6 +369,28 @@ body > nav > ul a:hover {
       width: 30%; }
     .site-footer__nav-links__information {
       margin-left: 31px; }
+
+.end-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 14px; }
+
+.end-page li {
+  list-style: none; }
+
+.end-page a {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px; }
+
+.end-page a:hover {
+  color: #000000; }
+
+.first-news-row {
+  cursor: pointer; }
+
+.first-news-row:hover {
+  color: #000000; }
 
 @media (min-width: 1000px) {
   .site-footer {
@@ -529,7 +551,7 @@ body > nav .link {
 body > nav > ul a:hover {
   opacity: 1; }
 
-@media (min-width: 1140px) {
+@media (min-width: 1000px) {
   body > nav {
     padding: 0;
     background-color: transparent;

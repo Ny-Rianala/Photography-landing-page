@@ -15,7 +15,8 @@
   &__subheader {
     padding-top: 19px;
     padding-bottom: 44px;
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 48px;
   }
   &__form {
     display: flex;
@@ -70,6 +71,7 @@
     }
     &__subheader {
       font-size: 52px;
+      line-height: 64px;
       padding-top: 0;
       margin-top: 0;
     }
