@@ -49,6 +49,7 @@
     }
     a {
       font-size: 16px;
+      font-weight: bold;
       padding-bottom: 23px;
       color: rgba(0, 0, 0, 0.5);
       text-decoration: none;
@@ -68,13 +69,6 @@
     }
   }
 }
-
-// .first-news-row {
-//   display: block;
-//   font-size: 16px;
-//   margin-bottom: 8px;
-//   color: $color-brand-grey;
-// }
 
 .end-page {
   display: flex;
@@ -109,6 +103,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-block-end: 1px solid slategrey;
+    margin-left: 95px;
     &__nav-links {
       padding-left: 135px;
       padding-top: 90px;
@@ -125,6 +120,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       margin-top: 73px;
+      margin-left: -35px;
     }
   }
 }
