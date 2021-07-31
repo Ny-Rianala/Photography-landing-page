@@ -102,7 +102,6 @@
   .site-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-block-end: 1px solid slategrey;
     margin-left: 95px;
     &__nav-links {
       padding-left: 135px;
@@ -124,15 +123,19 @@
     }
   }
 }
-// .end-page {
-//   display: flex;
-//   flex-direction: row;
-//   padding-bottom: 75px;
-//   justify-content: space-between;
-// }
-// .first-end-page {
-//   margin-left: 135px;
-// }
-// .second-end-page {
-//   margin-right: 135px;
-// }
+
+@media (min-width: 1000px) {
+  .end-page {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 75px;
+    justify-content: space-between;
+    border-block-start: 1px solid slategrey;
+  }
+  .first-end-page {
+    margin-left: 135px;
+  }
+  .second-end-page {
+    margin-right: 135px;
+  }
+}
