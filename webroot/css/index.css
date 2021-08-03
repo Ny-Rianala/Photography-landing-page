@@ -265,7 +265,13 @@ body > [type="checkbox"] {
     flex-direction: row;
     padding-top: 135px;
     padding-left: 135px;
-    padding-right: 54px; } }
+    padding-right: 54px; }
+  .latest-update__input {
+    max-width: 346px;
+    margin-left: 0;
+    margin-right: 24px; }
+  .latest-update__subscribe-button {
+    margin-top: 18px; } }
 
 .site-footer {
   margin-left: 14px; }
