@@ -223,9 +223,9 @@ body > [type="checkbox"] {
     text-transform: uppercase; }
   .latest-update__input {
     background-color: #ffffff;
-    padding-top: 13px;
-    padding-left: 16px;
-    padding-bottom: 11px;
+    padding-top: 9px;
+    padding-left: 14px;
+    padding-bottom: 6px;
     border: 1px solid #dadada;
     box-sizing: border-box;
     border-radius: 5px;
