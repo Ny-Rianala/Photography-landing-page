@@ -243,9 +243,9 @@ body > [type="checkbox"] {
     border-radius: 3%;
     color: white;
     background-color: #434CCC;
-    padding-top: 9px;
+    padding-top: 11px;
     padding-left: 46px;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     padding-right: 46px;
     cursor: pointer; }
 
