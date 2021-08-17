@@ -30,12 +30,13 @@
   }
   &__input {
     background-color: #ffffff;
-    padding-top: 9px;
-    padding-left: 14px;
-    padding-bottom: 6px;
+    padding-top: 13px;
+    padding-left: 16px;
+    padding-bottom: 11px;
     border: 1px solid #dadada;
     box-sizing: border-box;
     border-radius: 5px;
+    outline: none;
     padding-right: 60px;
     font-size: 16px;
     line-height: 24px;
@@ -46,16 +47,16 @@
     padding-bottom: 54px;
   }
   &__subscribe-button {
+    background-color: $site-header-color;
     font-size: 16px;
     font-weight: 700;
     border: none;
     border-radius: 3%;
     color: white;
-    background-color: $site-header-color;
-    padding-top: 11px;
-    padding-left: 46px;
-    padding-bottom: 8px;
-    padding-right: 46px;
+    padding-top: 13px;
+    padding-left: 45px;
+    padding-bottom: 11px;
+    padding-right: 45px;
     cursor: pointer;
   }
 }
@@ -83,7 +84,6 @@
       padding-right: 54px;
     }
     &__input {
-      max-width: 346px;
       margin-left: 0;
       margin-right: 24px;
     }

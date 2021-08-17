@@ -86,11 +86,8 @@ body > [type="checkbox"] {
   .container__link {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 80px; }
+    padding-top: 31px; }
     .container__link a {
-      padding-top: 31px;
-      margin-top: 0;
-      margin-bottom: 0;
       font-size: 16px;
       line-height: 24px;
       color: rgba(0, 0, 0, 0.5); }
@@ -98,14 +95,15 @@ body > [type="checkbox"] {
     font-size: 52px;
     line-height: 64px;
     padding-top: 61px;
-    padding-bottom: 65px;
     margin-bottom: 0;
     margin-top: 0; }
   .container__paragraph {
     line-height: 32px;
     font-size: 18px;
+    font-weight: normal;
     margin-bottom: 0;
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 65px; }
 
 @media (min-width: 1120px) {
   .masthead__header {
@@ -116,9 +114,6 @@ body > [type="checkbox"] {
   .container__subheading {
     font-size: 72px;
     line-height: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding-right: 535px; } }
 
 .site-information {
@@ -130,13 +125,13 @@ body > [type="checkbox"] {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    padding-left: 0;
-    margin: 12px;
-    margin: 0; }
+    margin: 0;
+    padding-left: 0; }
   .site-information__images::-webkit-scrollbar {
     display: none; }
   .site-information__model-image {
-    max-width: 100%; }
+    max-width: 100%;
+    padding-bottom: 9px; }
   .site-information__small-images {
     max-width: 110px;
     margin-right: 9px;
@@ -156,7 +151,6 @@ body > [type="checkbox"] {
 
 .site-footer__share {
   display: flex;
-  margin-left: 13px;
   flex-wrap: wrap;
   align-items: flex-start; }
 
@@ -223,12 +217,13 @@ body > [type="checkbox"] {
     text-transform: uppercase; }
   .latest-update__input {
     background-color: #ffffff;
-    padding-top: 9px;
-    padding-left: 14px;
-    padding-bottom: 6px;
+    padding-top: 13px;
+    padding-left: 16px;
+    padding-bottom: 11px;
     border: 1px solid #dadada;
     box-sizing: border-box;
     border-radius: 5px;
+    outline: none;
     padding-right: 60px;
     font-size: 16px;
     line-height: 24px;
@@ -237,16 +232,16 @@ body > [type="checkbox"] {
     padding-top: 16px;
     padding-bottom: 54px; }
   .latest-update__subscribe-button {
+    background-color: #434CCC;
     font-size: 16px;
     font-weight: 700;
     border: none;
     border-radius: 3%;
     color: white;
-    background-color: #434CCC;
-    padding-top: 11px;
-    padding-left: 46px;
-    padding-bottom: 8px;
-    padding-right: 46px;
+    padding-top: 13px;
+    padding-left: 45px;
+    padding-bottom: 11px;
+    padding-right: 45px;
     cursor: pointer; }
 
 @media (min-width: 1000px) {
@@ -267,7 +262,6 @@ body > [type="checkbox"] {
     padding-left: 135px;
     padding-right: 54px; }
   .latest-update__input {
-    max-width: 346px;
     margin-left: 0;
     margin-right: 24px; }
   .latest-update__subscribe-button {
@@ -275,8 +269,6 @@ body > [type="checkbox"] {
 
 .site-footer {
   margin-left: 14px; }
-  .site-footer__share-link {
-    margin-left: 14px; }
   .site-footer__header {
     font-size: 24px;
     text-transform: uppercase;
@@ -299,8 +291,7 @@ body > [type="checkbox"] {
   .site-footer__nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 14px; }
+    justify-content: space-between; }
   .site-footer__nav-links {
     padding-left: 0;
     color: rgba(0, 0, 0, 0.5); }
@@ -332,7 +323,8 @@ body > [type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 14px; }
+  margin-left: 14px;
+  padding-left: 0px; }
 
 .end-page li {
   list-style: none; }
@@ -389,7 +381,7 @@ body > [type="checkbox"] {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     margin-left: -24px;
-    padding-bottom: 75px; }
+    padding-top: 92px; }
   .more-information__first-row {
     font-size: 16px;
     margin-bottom: 8px;
@@ -401,18 +393,19 @@ body > [type="checkbox"] {
     padding-left: 14px; }
   .more-information__header {
     font-size: 40px;
-    padding-bottom: 31px;
+    padding-top: 75px;
     line-height: 48px; }
   .more-information__first-paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
-    padding-bottom: 40px; }
+    padding-top: 31px; }
   .more-information__second-paragraph {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
-    line-height: 24px; }
+    line-height: 24px;
+    padding-top: 92px; }
 
 @media (min-width: 1000px) {
   .more-information {
