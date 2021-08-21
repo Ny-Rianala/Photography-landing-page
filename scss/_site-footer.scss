@@ -26,9 +26,7 @@
     line-height: 24px;
   }
   &__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include horizontal-container;
   }
   &__nav-links {
     padding-left: 0;
@@ -51,8 +49,7 @@
       text-decoration: none;
     }
     &__card {
-      display: flex;
-      flex-direction: row;
+      @include horizontal-container;
       text-decoration: none;
       list-style: none;
       margin-bottom: 31px;
@@ -123,10 +120,8 @@
 
 @media (min-width: 1000px) {
   .end-page {
-    display: flex;
-    flex-direction: row;
+    @include horizontal-container;
     padding-bottom: 75px;
-    justify-content: space-between;
     border-block-start: 1px solid slategrey;
   }
   .first-end-page {

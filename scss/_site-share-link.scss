@@ -10,9 +10,9 @@
 }
 
 .site-footer__share-icons ul {
-  display: flex;
+  @include horizontal-container;
+  flex-wrap: wrap;
   margin: 0;
-  flex-direction: row;
   align-items: center;
   padding-left: 0;
   padding-top: 45px;
@@ -28,8 +28,8 @@
 
 .share-link-icons ul {
   display: flex;
-  margin: 0;
   flex-direction: row;
+  margin: 0;
   align-items: center;
   padding-left: 14px;
   padding-top: 45px;

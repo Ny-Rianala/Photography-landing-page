@@ -3,3 +3,9 @@
   margin-inline-start: auto;
   margin-inline-end: auto;
 }
+
+@mixin horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

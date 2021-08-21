@@ -156,8 +156,10 @@ body > [type="checkbox"] {
 
 .site-footer__share-icons ul {
   display: flex;
-  margin: 0;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
   align-items: center;
   padding-left: 0;
   padding-top: 45px;
@@ -172,8 +174,8 @@ body > [type="checkbox"] {
 
 .share-link-icons ul {
   display: flex;
-  margin: 0;
   flex-direction: row;
+  margin: 0;
   align-items: center;
   padding-left: 14px;
   padding-top: 45px;
@@ -247,7 +249,8 @@ body > [type="checkbox"] {
 @media (min-width: 1000px) {
   .latest-update__container {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
   .latest-update__text-form {
     margin-left: 100px; }
   .latest-update__subheader {
@@ -258,6 +261,7 @@ body > [type="checkbox"] {
   .latest-update__form {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 135px;
     padding-left: 135px;
     padding-right: 54px; }
@@ -290,7 +294,7 @@ body > [type="checkbox"] {
     line-height: 24px; }
   .site-footer__nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between; }
   .site-footer__nav-links {
     padding-left: 0;
@@ -311,6 +315,7 @@ body > [type="checkbox"] {
     .site-footer__nav-links__card {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       text-decoration: none;
       list-style: none;
       margin-bottom: 31px; }
@@ -366,8 +371,8 @@ body > [type="checkbox"] {
   .end-page {
     display: flex;
     flex-direction: row;
-    padding-bottom: 75px;
     justify-content: space-between;
+    padding-bottom: 75px;
     border-block-start: 1px solid slategrey; }
   .first-end-page {
     margin-left: 135px; }
@@ -495,18 +500,18 @@ body > nav > h2 > label {
   background-repeat: no-repeat; }
 
 body > nav > ul {
-  list-style: none;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  list-style: none; }
 
 body > nav > ul a {
+  display: block;
   text-transform: uppercase;
   text-decoration: none;
   opacity: 0.5;
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1rem;
-  display: block;
   padding: 1rem 1rem 1rem 4rem; }
 
 body > nav .link {

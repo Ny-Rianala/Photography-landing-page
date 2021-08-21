@@ -64,8 +64,7 @@
 @media (min-width: 1000px) {
   .latest-update {
     &__container {
-      display: flex;
-      flex-direction: row;
+      @include horizontal-container;
     }
     &__text-form {
       margin-left: 100px;
@@ -77,8 +76,7 @@
       margin-top: 0;
     }
     &__form {
-      display: flex;
-      flex-direction: row;
+      @include horizontal-container;
       padding-top: 135px;
       padding-left: 135px;
       padding-right: 54px;
