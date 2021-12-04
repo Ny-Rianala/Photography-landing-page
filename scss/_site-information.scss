@@ -6,7 +6,8 @@
   &__images {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    overflow-x: scroll;
+    justify-content: space-between;
     margin: 0;
     padding-left: 0;
   }
@@ -18,9 +19,13 @@
     padding-bottom: 9px;
   }
   &__small-images {
-    max-width: 110px;
+    max-width: 126px;
     margin-right: 9px;
     opacity: 0.5;
+    border-radius: 5px;
+  }
+  &__small-images:hover {
+    opacity: 1;
   }
 }
 

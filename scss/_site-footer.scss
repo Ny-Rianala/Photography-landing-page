@@ -9,6 +9,12 @@
   &__card {
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+  &__image-card {
+    width: 90px;
+    height: auto;
+    border-radius: 5px;
   }
   &__information {
     margin-left: 12px;
@@ -47,15 +53,6 @@
       padding-bottom: 23px;
       color: rgba(0, 0, 0, 0.5);
       text-decoration: none;
-    }
-    &__card {
-      @include horizontal-container;
-      text-decoration: none;
-      list-style: none;
-      margin-bottom: 31px;
-    }
-    &__image-card {
-      width: 30%;
     }
     &__information {
       margin-left: 31px;
@@ -103,10 +100,6 @@
     }
     &__home {
       margin-bottom: 24px;
-    }
-    &__image-card {
-      width: 100%;
-      height: 100%;
     }
     &__container-card {
       display: flex;
