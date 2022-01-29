@@ -10,13 +10,13 @@
     justify-content: space-between;
     margin: 0;
     padding-left: 0;
+    padding-top: 9px;
   }
   &__images::-webkit-scrollbar {
     display: none;
   }
   &__model-image {
     max-width: 100%;
-    padding-bottom: 9px;
     border-radius: 5px;
   }
   &__small-images {
@@ -35,6 +35,9 @@
     padding-left: 135px;
     padding-right: 135px;
     border-radius: 0%;
+    &__images {
+      padding-top: 9px;
+    }
     &__small-images {
       padding-right: 2px;
     }
