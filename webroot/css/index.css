@@ -190,6 +190,9 @@ body > [type="checkbox"] {
   margin: 0;
   margin-right: 10px; }
 
+.site-footer__share-icons li a:hover {
+  color: #000000; }
+
 @media (min-width: 1000px) {
   .share {
     margin-left: 0; } }
