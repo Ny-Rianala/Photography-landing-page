@@ -12,7 +12,7 @@
 ![photograp-galerry](https://user-images.githubusercontent.com/60210310/154918405-7e07c274-15a2-4ae8-81bc-aeaf36855151.png)
 
 ### Built with
-This project is build with
+This project is built with
 
 - HTML
 - SASS
